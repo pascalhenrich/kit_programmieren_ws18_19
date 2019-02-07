@@ -5,7 +5,7 @@ Setup:
 1) Follow the guide on: https://joshuagleitze.de/tutorien/programmieren1617/material/terminaltest
 2) Download the Testcase.java
 3) Create a jUnit test
-4) Replace the content in this file with the content in the Testcase.java
+4) Replace the content in this file with the content of the Testcase.java
 5) Run your testcase file
 
 Questions?
