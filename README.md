@@ -11,4 +11,4 @@ Setup:
 Questions?
 Feel free to write me a message if something doesn't work or some test are wrong!
 
-Warning: Validity of this tests are not guaranteed!
+Warning: Validity of this tests is not guaranteed!
