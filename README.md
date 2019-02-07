@@ -7,3 +7,8 @@ Setup:
 3) Create a jUnit test
 4) Replace the content in this file with the content in the Testcase.java
 5) Run your testcase file
+
+Questions?
+Feel free to write me a message if something doesn't work or some test are wrong!
+
+Warning: Validity of this tests are not guaranteed!
