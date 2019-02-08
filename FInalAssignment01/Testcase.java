@@ -30,15 +30,54 @@ public class Testcase {
 
     @Test
     public void test_01() {
-        // add student should print out OK
-        Terminal.addSingleLineOutputThatIsExactly("add student", "OK");
-        // list students can output students in any order
-        Terminal.addMultipleLineOutputThatMatches("list students", containsInAnyOrder("Emil", "Paul"));
-        // quit should not print out anything
-        Terminal.addNoOutput("quit");
-
+        // Beispiel Interaktion um einen DAWN Stein zu legen
+        // add gamestone correct
+        Terminal.addSingleLineOutputThatIsExactly("place 5;-6;5;0", "OK");
+        // print
+        Terminal.addMultipleLinesOutputThatIsExactly("print", "---------------", "---------------", "---------------",
+                "---------------", "---------------", "+--------------", "---------------", "---------------",
+                "---------------", "---------------", "---------------");
         // starts program with no arguments
         Main.main(NO_ARGS);
 
     }
+
+    @Test
+    public void test_02() {
+        // Beispiel Interaktion um einen Spielstein der Länge 5 zu legen
+        // add gamestone wrong
+        Terminal.addSingleLineOutputThatIsExactly("place 0;-4:0;1", "Error, the token is not completely on the board.");
+        // starts program with no arguments
+        Main.main(NO_ARGS);
+
+    }
+
+    @Test
+    public void test_03() {
+        // Beispiel Interaktion um einen Spielstein der Länge 5 zu legen
+        // add gamestone correct
+        Terminal.addSingleLineOutputThatIsExactly("place 0;0:0;4", "OK");
+        // print
+        Terminal.addMultipleLinesOutputThatIsExactly("print", "+++++----------", "---------------", "---------------",
+                "---------------", "---------------", "---------------", "---------------", "---------------",
+                "---------------", "---------------", "---------------");
+        // starts program with no arguments
+        Main.main(NO_ARGS);
+
+    }
+
+    @Test
+    public void test_04() {
+        // Beispiel Interaktion um einen Spielstein der Länge 5 zu legen
+        // add gamestone correct
+        Terminal.addSingleLineOutputThatIsExactly("place 0;4:0;0", "OK");
+        // print
+        Terminal.addMultipleLinesOutputThatIsExactly("print", "+++++----------", "---------------", "---------------",
+                "---------------", "---------------", "---------------", "---------------", "---------------",
+                "---------------", "---------------", "---------------");
+        // starts program with no arguments
+        Main.main(NO_ARGS);
+
+    }
+
 }
