@@ -67,7 +67,6 @@ public class Testcase3 {
         Terminal.addSingleLineOutputThatIsExactly("roll 5", "OK");
         Terminal.addSingleLineOutputThatMatches("place 10;4:10;9", startsWith("Error"));
         Terminal.addSingleLineOutputThatIsExactly("place 10;4:10;8", "OK");
-        
         Terminal.addSingleLineOutputThatMatches("roll 4", startsWith("Error"));
         Terminal.addSingleLineOutputThatMatches("show-result", startsWith("Error"));
         Terminal.addSingleLineOutputThatIsExactly("move 1;11", "OK");
